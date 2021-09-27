@@ -25,5 +25,19 @@ bool setBits(int& number , int order){
     } else{
         return false;
     }
+}
+double mean(double array[],int numElements){
+    double finalElements=0;
+    for (int i = 0; i < numElements; ++i) {
+        finalElements+=array[i];
+    }
+    finalElements=finalElements/numElements;
+    if (numElements!=0)
+    return finalElements;
+    else{
+        return NAN;
+    }
+}
+double stddev(double array[],int numElements) {
 
 }
