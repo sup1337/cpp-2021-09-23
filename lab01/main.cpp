@@ -20,6 +20,9 @@ int main() {
     }
     std::cout<<std::endl;
     std::cout<<"average is:"<<mean(array,numElement)<<std::endl;
+    std::cout<<"standard devitation:"<<stddev(array,numElement)<<std::endl;
+    std::cout<<"maxFirst:"<<max2(array,numElement).first<<std::endl;
+    std::cout<<"maxSecond:"<<max2(array,numElement).second<<std::endl;
 
     return 0;
 }
