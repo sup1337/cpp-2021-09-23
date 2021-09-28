@@ -1,6 +1,6 @@
 #include <iostream>
 #include "functions.h"
-
+#include <sstream>
 int main() {
     for (int i = 0; i < 127; ++i) {
         std::cout << countBits(i)<<std::endl;
@@ -23,6 +23,22 @@ int main() {
     std::cout<<"standard devitation:"<<stddev(array,numElement)<<std::endl;
     std::cout<<"maxFirst:"<<max2(array,numElement).first<<std::endl;
     std::cout<<"maxSecond:"<<max2(array,numElement).second<<std::endl;
+    std::string myStr = "1 2 3 alma 4 5 6";
+    std::stringstream strm(myStr);
+    int number;
+    int sum = 0;
+    while (strm >> number)
+        sum += number;
+    std::cout << sum << std::endl;
+    std::string words = "kicsi kUtya fehEr retek Mogyoro ";
+    std::cout <<"number of words:" <<countWords(words)<<std::endl;
+    std::cout <<"code: "<< code(words)<<std::endl;
+    std::string codedText;
+    codedText= code(words);
+    std::cout <<"deCode: "<< deCode(codedText)<<std::endl;
+    std::string newText;
+    std::getline(std::cin,newText);
+    std::cout << capitalizeWords(newText);
 
     return 0;
 }

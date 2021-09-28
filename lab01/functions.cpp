@@ -3,7 +3,10 @@
 //
 #include <iostream>
 #include "functions.h"
-#include<cmath>
+#include <cmath>
+#include <sstream>
+#include <string>
+#include <cstring>
 int countBits( int number) {
     int count = 0;
     while (number!=0) {
@@ -87,3 +90,65 @@ std::pair<double ,double>max2(double array[],int numElements) {
     }
     return pair1;
 }
+int countWords(std::string text){
+    std::stringstream myss(text);
+    std::string words;
+    int counter=0;
+    while (myss >> words){
+        counter++;
+    }
+    return counter;
+}
+std::string code(std::string text){
+    int index=0;
+    while (text[index]!=0) {
+        if (text[index] >= 'a' && text[index] <= 'z') {
+            if (text[index] == 'z') {
+                text[index] = 'a';
+            } else {
+                text[index]++;
+            }
+        }
+        if (text[index] >= 'A' && text[index] <= 'Z') {
+            if (text[index] == 'Z') {
+                text[index] = 'A';
+            } else {
+                text[index]++;
+            }
+        }
+        ++index;
+    }
+    return text;
+}
+std::string deCode(std::string text){
+    int index=0;
+    while (text[index]!=0) {
+        if (text[index] >= 'a' && text[index] <= 'z') {
+            if (text[index] == 'a') {
+                text[index] = 'z';
+            } else {
+                text[index]--;
+            }
+        }
+        if (text[index] >= 'A' && text[index] <= 'Z') {
+            if (text[index] == 'A') {
+                text[index] = 'Z';
+            } else {
+                text[index]--;
+            }
+        }
+        ++index;
+    }
+    return text;
+}
+std::string capitalizeWords(std::string text){
+    text[0]= toupper(text[0]);
+    for (int i = 0; i < text.length(); ++i) {
+        if (text[i-1]==' ')
+            text[i]= toupper(text[i]);
+        else
+            text[i]= tolower(text[i]);
+    }
+    return text;
+}
+

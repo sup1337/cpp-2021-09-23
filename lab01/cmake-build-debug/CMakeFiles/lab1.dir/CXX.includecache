@@ -6,11 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/functions.cpp
+iostream
+-
+functions.h
 /Users/sup1/CLionProjects/cpp-2021-09-23/lab01/functions.h
+cmath
+-
+sstream
+-
+string
+-
+cstring
+-
+
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/functions.h
+string
+-
 
 /Users/sup1/CLionProjects/cpp-2021-09-23/lab01/main.cpp
 iostream
 -
 functions.h
 /Users/sup1/CLionProjects/cpp-2021-09-23/lab01/functions.h
+sstream
+-
 
