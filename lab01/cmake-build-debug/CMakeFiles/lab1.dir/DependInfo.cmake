@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp" "/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/cmake-build-debug/CMakeFiles/lab1.dir/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.o"
   "/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/functions.cpp" "/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/cmake-build-debug/CMakeFiles/lab1.dir/functions.cpp.o"
   "/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/main.cpp" "/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o"
   )

@@ -87,6 +87,12 @@
 		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/main.cpp">
 			<Option target="lab1"/>
 		</Unit>
+		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp">
+			<Option target="lab1"/>
+		</Unit>
+		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.h">
+			<Option target="lab1"/>
+		</Unit>
 		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab01/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

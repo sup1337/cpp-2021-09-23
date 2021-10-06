@@ -129,6 +129,30 @@ lab1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
 .PHONY : lab1/fast
 
+Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.o: Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.o
+.PHONY : Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.o
+
+# target to build an object file
+Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.o
+.PHONY : Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.o
+
+Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.i: Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.i
+.PHONY : Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.i
+
+# target to preprocess a source file
+Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.i
+.PHONY : Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.i
+
+Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.s: Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.s
+.PHONY : Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.s
+
+# target to generate assembly for a file
+Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.s
+.PHONY : Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.s
+
 functions.o: functions.cpp.o
 .PHONY : functions.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lab1"
+	@echo "... Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.o"
+	@echo "... Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.i"
+	@echo "... Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.s"
 	@echo "... functions.o"
 	@echo "... functions.i"
 	@echo "... functions.s"

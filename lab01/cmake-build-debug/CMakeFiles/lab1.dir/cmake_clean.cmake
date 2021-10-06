@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lab1.dir/Users/sup1/CLionProjects/cpp-2021-09-23/lab02/Point.cpp.o"
   "CMakeFiles/lab1.dir/functions.cpp.o"
   "CMakeFiles/lab1.dir/main.cpp.o"
   "lab1"
