@@ -18,6 +18,8 @@ public:
     int distSq(Point p, Point q);
     bool isSquare(Point p1, Point p2, Point p3, Point p4);
     void testIsSquare(const char * filename);
+    Point* createArray(int numPoints);
+
 };
 
 

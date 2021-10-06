@@ -25,11 +25,5 @@ int Point::getY() const {
 void Point::print() const{
     cout<< "("<<this->getX()<<","<< this->getY()<<")";
 }
-double distance(const Point& p1, const Point& p2){
-    return sqrt(pow(p1.getX()- p2.getX(), 2) +
-                pow(p2.getY() - p2.getY(), 2) * 1.0);
-}
 
-void testIsSquare(const char * filename){
 
-}
