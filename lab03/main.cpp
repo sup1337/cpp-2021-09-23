@@ -10,5 +10,11 @@ int main() {
         list.print();
         list.empty();
     }
+    cout<<"list size "<<list.size()<<endl;
+    list.insertFirst(11);
+    list.print();
+    list.removeFirst();
+    list.print();
+
     return 0;
 }

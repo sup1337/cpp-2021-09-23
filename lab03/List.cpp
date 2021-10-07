@@ -53,11 +53,12 @@ void List::insertFirst(int d) {
 }
 
 int List::removeFirst() {
+     first=first->next;
     return 0;
 }
 
 void List::remove(int d, List::DeleteFlag df) {
-
+    
 }
 
 void List::print() const {
