@@ -15,6 +15,7 @@ int main() {
     list.print();
     list.removeFirst();
     list.print();
-
+    list.remove(11);
+    list.print();
     return 0;
 }
