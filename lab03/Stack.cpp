@@ -5,10 +5,11 @@
 #include "Stack.h"
 
 void Stack::push(int e) {
+    elements.insertFirst(e);
 }
 int Stack::pop() {
 
 }
 bool Stack::isEmpty() const {
-
+    return elements.empty();
 }

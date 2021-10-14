@@ -1,7 +1,4 @@
-#include <iostream>
+//
+// Created by Laszlo Hunor on 14.10.2021.
+//
 
-int main() {
-    std::cout << "Hello, lab4" << std::endl;
-
-    return 0;
-}

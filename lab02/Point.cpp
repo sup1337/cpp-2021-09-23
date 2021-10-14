@@ -3,6 +3,8 @@
 //
 
 #include "Point.h"
+#include "../lab04/Point.h"
+
 #include <fstream>
 using namespace std;
 ifstream fin("input.txt");
@@ -27,3 +29,6 @@ void Point::print() const{
 }
 
 
+double Point::distanceTo(const Point &point) const {
+    return 0;
+}
