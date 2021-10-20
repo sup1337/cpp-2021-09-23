@@ -23,7 +23,7 @@ PointSet::PointSet(int n){
         int y=(int)dist(mt);
         if (!stat[x][y])
         {
-            points.emplace_back(x, y);
+          //  points.emplace_back(x, y);
             stat[x][y]= true;
         }
     }
@@ -68,17 +68,11 @@ double PointSet::minDistance() const {
 }
 
 void PointSet::sortPointsX() {
-    sort(points.begin(), points.end(),[](const Point& a, const Point& b)
-    {
-        return a.getX() > b.getX();
-    });
+
 }
 
 void PointSet::sortPointsY() {
-    sort(points.begin(), points.end(),[](const Point& a, const Point& b)
-    {
-        return a.getY() > b.getY();
-    });
+
 }
 
 void PointSet::sortDistances() {

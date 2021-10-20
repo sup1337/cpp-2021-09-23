@@ -8,7 +8,6 @@
 #include "Point.h"
 #include <vector>
 #include <cstdlib>
-#include <bits/stdc++.h>
 #include <random>
 #include <ctime>
 
@@ -39,8 +38,10 @@ public:
     void sortDistances();
 
     int numDistinctDistances();
+
+    void init();
 };
 
-void init();
+
 
 #endif //CPP_2021_09_23_POINTSET_H

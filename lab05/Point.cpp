@@ -4,9 +4,7 @@
 
 #include "Point.h"
 
-int Point::getX() const {
-    return x;
-}
+
 
 Point::Point(int x, int y) {
     if (x>=0 && x<M && y>=0 && y<M)
@@ -23,6 +21,9 @@ Point::Point(int x, int y) {
 
 int Point::getY() const {
     return y;
+}
+int Point::getX() const {
+    return x;
 }
 
 double Point::distanceTo(const Point &point) const {
