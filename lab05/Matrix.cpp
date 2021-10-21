@@ -61,3 +61,10 @@ int Matrix::getMRows() const {
 int Matrix::getMCols() const {
     return mCols;
 }
+
+Matrix operator+(const Matrix &x, const Matrix &y) {
+    if (x.mRows!=y.mRows || x.mCols!=y.mCols) {
+        throw out_of_range("out of range");
+    }else{Matrix (x,y);
+    }
+}

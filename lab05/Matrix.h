@@ -23,11 +23,9 @@ public:
     void printMatrix(ostream& os = cout) const;
     void randomMatrix(int a, int b);
     bool isSquare() const;
-
     int getMRows() const;
-
     int getMCols() const;
-
+    friend Matrix operator+(const Matrix& x, const Matrix& y);
 private:
 //Data
     double ** mElements;
