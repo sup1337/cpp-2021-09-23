@@ -65,5 +65,11 @@ int Matrix::getMCols() const {
 Matrix operator+(const Matrix &x, const Matrix &y) {
     if (x.mRows!=y.mRows || x.mCols!=y.mCols) {
         throw out_of_range("out of range");
+    } else{
+        for (int i = 0; i < x.mRows; ++i) {
+            for (int j = 0; j < x.mCols; ++j) {
+                x.mElements[i][j]+=y.mElements[i][j];
+            }
+        }
     }
 }

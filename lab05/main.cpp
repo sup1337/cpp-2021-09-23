@@ -6,13 +6,15 @@
 #include <fstream>
 using namespace std;
 int main() {
-    Matrix m1(2,3);
+    Matrix m1(3,3);
     m1.fillMatrix(2);
     ofstream ofs("matrix.txt");
     m1.printMatrix(ofs);
-    Matrix m2(3,4);
+    cout<<endl;
+    Matrix m2(3,3);
     m2.randomMatrix(3,4);
-    m1.printMatrix(ofs);
+    m2.printMatrix(ofs);
     cout<<endl<<m2.isSquare();
-    return 0;
+    operator+(m1,m2).printMatrix();
+        return 0;
 }
