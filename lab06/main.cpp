@@ -6,7 +6,12 @@
 
 int main(){
     double c1[]{1,2,3};
+    double c2[]{3,2,1};
     Polynomial p1(2,c1);
+    Polynomial p2(2,c2);
     cout << p1<< endl;
+    cout << p1.degree()<< endl;
+    cout << p1.evaluate(3)<< endl;
+    cout << p1.derivative();
     return 0;
 }

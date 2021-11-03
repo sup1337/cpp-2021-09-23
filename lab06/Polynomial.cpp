@@ -42,17 +42,24 @@ Polynomial::~Polynomial() {
 }
 
 int Polynomial::degree() const {
-    return 0;
+    return this->capacity-1;
 }
 
 double Polynomial::evaluate(double x) const {
-
-    return 0;
+    double result=coefficients[0];
+    for (int i = 0; i < capacity; ++i) {
+        result*x+coefficients[i];
+    }
+    return result;
 }
 
 Polynomial Polynomial::derivative() const {
-
-    return Polynomial(0, nullptr);
+    double  result[capacity-1];
+    for (int i = 0; i < capacity-1; ++i) {
+        result[i]=coefficients[i]*(capacity-1-i);
+    }
+    Polynomial derivative(capacity-1,result);
+        return derivative;
 }
 
 double Polynomial::operator[](int index) const {
