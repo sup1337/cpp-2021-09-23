@@ -27,7 +27,10 @@ void Customer::setLastName(const string &lastName) {
 }
 
 Account &Customer::getAccount(int id) {
-    return <#initializer#>;
+    for (int i = 0; i = id; ++i) {
+
+    }
+    return Customer ;
 }
 
 int Customer::newAccount(double balance) {
@@ -45,7 +48,7 @@ bool Customer::deleteAccount(int id) {
 }
 
 int Customer::getNumAccounts() const {
-    return sizeof accounts;
+    return sizeof this->accounts;
 }
 
 void Customer::print(ostream &os) const {
@@ -53,9 +56,9 @@ void Customer::print(ostream &os) const {
 }
 
 Account &Customer::operator[](int index) {
-    return <#initializer#>;
+    return accounts[index];
 }
 
 const Account &Customer::operator[](int index) const {
-    return <#initializer#>;
+
 }
