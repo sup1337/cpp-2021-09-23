@@ -1,2 +1,2 @@
 project(lab07)
-add_executable(lab7 main.cpp Account.cpp Account.h)
+add_executable(lab7 main.cpp Account.cpp Account.h Customer.cpp Customer.h)

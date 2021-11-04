@@ -6,12 +6,12 @@
 #define LAB06_ACCOUNT_H
 #include <iostream>
 using namespace std;
-
-#include <iostream>
-using namespace std;
 class Account {
 public:
-    Account(double balance=0);
+   explicit Account(double balance=0);
+
+    Account(int id, double balance);
+
     void deposit( double amount);
     bool withdraw(double amount);
     int getId() const;

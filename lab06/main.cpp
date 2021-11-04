@@ -12,6 +12,9 @@ int main(){
     cout << p1<< endl;
     cout << p1.degree()<< endl;
     cout << p1.evaluate(3)<< endl;
-    cout << p1.derivative();
+    cout << p1.derivative()<< endl;
+    cout << p1.operator[](2) << endl;
+    cout << operator+(p1,p2)<< endl;
+    cout << operator-(p1,p2)<< endl;
     return 0;
 }

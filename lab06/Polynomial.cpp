@@ -54,16 +54,16 @@ double Polynomial::evaluate(double x) const {
 }
 
 Polynomial Polynomial::derivative() const {
-    double  result[capacity-1];
-    for (int i = 0; i < capacity-1; ++i) {
-        result[i]=coefficients[i]*(capacity-1-i);
+    double result[this->capacity - 1];
+    for (int i = 0; i < this->capacity - 1; ++i) {
+        result[i] = this->coefficients[i] * (this->capacity - 1 - i);
     }
-    Polynomial derivative(capacity-1,result);
-        return derivative;
+
+    return Polynomial(this->capacity - 2, result);
 }
 
 double Polynomial::operator[](int index) const {
-    return 0;
+    return coefficients[index];
 }
 
 Polynomial operator-(const Polynomial &a) {
@@ -71,11 +71,25 @@ Polynomial operator-(const Polynomial &a) {
 }
 
 Polynomial operator+(const Polynomial &a, const Polynomial &b) {
-    return Polynomial(0, nullptr);
+    double resultA[a.capacity];
+    if(a.capacity==b.capacity){
+        for (int i = 0; i < a.capacity; ++i) {
+            resultA[i]=a.coefficients[i]+b.coefficients[i];
+        }
+    }
+    Polynomial result(a.degree(), resultA);
+    return result;
 }
 
 Polynomial operator-(const Polynomial &a, const Polynomial &b) {
-    return Polynomial(0, nullptr);
+    double resultA[a.capacity];
+    if(a.capacity==b.capacity){
+        for (int i = 0; i < a.capacity; ++i) {
+            resultA[i]=a.coefficients[i]-b.coefficients[i];
+        }
+    }
+    Polynomial result(a.degree(), resultA);
+    return result;
 }
 
 Polynomial operator*(const Polynomial &a, const Polynomial &b) {
