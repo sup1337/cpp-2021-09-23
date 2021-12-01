@@ -3,6 +3,7 @@
 //
 
 #include "Customer.h"
+#include <exception>
 int Customer::counter{0};
 Customer::Customer(const string &firstName, const string &lastName) {
     this->firstName=firstName;
@@ -27,14 +28,20 @@ void Customer::setLastName(const string &lastName) {
 }
 
 Account &Customer::getAccount(int id) {
-    for (int i = 0; i = id; ++i) {
-
+    try {
+    for (int i = 0; i <= accounts.size(); ++i) {
+        return accounts[i];
+         }
     }
-    return Customer ;
+    catch(int r){
+        cout << "id didnt exissts";
+    }
 }
 
 int Customer::newAccount(double balance) {
-    return 0;
+    Account account(balance);
+    this->accounts.emplace_back(account);
+    return account.getId();
 }
 
 bool Customer::deleteAccount(int id) {
@@ -52,7 +59,10 @@ int Customer::getNumAccounts() const {
 }
 
 void Customer::print(ostream &os) const {
- os << "FirstName: "<< firstName<< "LastName: " << lastName << "id: " << id << endl;
+ os<< "id: " << id << " FirstName: "<< firstName<< " LastName: " << lastName << endl;
+    for (int i = 0; i < accounts.size(); ++i) {
+        cout<< "\t" << accounts[i]<< endl;
+    }
 }
 
 Account &Customer::operator[](int index) {
@@ -61,4 +71,9 @@ Account &Customer::operator[](int index) {
 
 const Account &Customer::operator[](int index) const {
 
+}
+
+ostream &operator<<(ostream &os, const Customer &customer) {
+    customer.print(os);
+    return os;
 }
