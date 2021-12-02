@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab03/List.cpp
+List.h
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab03/List.h
+
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab03/List.h
+

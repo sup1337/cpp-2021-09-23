@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab05/Matrix.h
+iostream
+-
+stdexcept
+-
+
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab05/main.cpp
+iostream
+-
+Matrix.h
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab05/Matrix.h
+fstream
+-
+
