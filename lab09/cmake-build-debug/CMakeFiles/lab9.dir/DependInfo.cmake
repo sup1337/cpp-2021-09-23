@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Alkalmazott.cpp" "/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/cmake-build-debug/CMakeFiles/lab9.dir/Alkalmazott.cpp.o"
   "/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Szemely.cpp" "/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/cmake-build-debug/CMakeFiles/lab9.dir/Szemely.cpp.o"
   "/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/main.cpp" "/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/cmake-build-debug/CMakeFiles/lab9.dir/main.cpp.o"
   )

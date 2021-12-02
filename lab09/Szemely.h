@@ -6,6 +6,7 @@
 #define LAB9_SZEMELY_H
 #include <string>
 #include <ostream>
+#include <iostream>
 
 using namespace std;
 class Szemely {
@@ -17,6 +18,7 @@ public:
     Szemely(const string &vezetekNev, const string &keresztNev, int szuletesiEv);
 
     friend ostream &operator<<(ostream &os, const Szemely &szemely);
+    virtual void print(ostream& os=cout)const;
 };
 
 

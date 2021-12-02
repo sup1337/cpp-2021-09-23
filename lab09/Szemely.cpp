@@ -13,7 +13,14 @@ Szemely::Szemely(const string &vezetekNev, const string &keresztNev, int szulete
 }
 
 ostream &operator<<(ostream &os, const Szemely &szemely) {
-    os << "vezetekNev: " << szemely.vezetekNev << " keresztNev: " << szemely.keresztNev << " szuletesiEV: "
-       << szemely.szuletesiEV;
+    szemely.print(os);
     return os;
+
+
+}
+
+void Szemely::print(ostream &os) const {
+    os << "vezetekNev: " << this->vezetekNev<< " keresztNev: " << this->keresztNev << " szuletesiEV: "
+       << this->szuletesiEV;
+
 }

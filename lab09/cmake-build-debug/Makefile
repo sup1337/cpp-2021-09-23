@@ -129,6 +129,30 @@ lab9/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/build
 .PHONY : lab9/fast
 
+Alkalmazott.o: Alkalmazott.cpp.o
+.PHONY : Alkalmazott.o
+
+# target to build an object file
+Alkalmazott.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/Alkalmazott.cpp.o
+.PHONY : Alkalmazott.cpp.o
+
+Alkalmazott.i: Alkalmazott.cpp.i
+.PHONY : Alkalmazott.i
+
+# target to preprocess a source file
+Alkalmazott.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/Alkalmazott.cpp.i
+.PHONY : Alkalmazott.cpp.i
+
+Alkalmazott.s: Alkalmazott.cpp.s
+.PHONY : Alkalmazott.s
+
+# target to generate assembly for a file
+Alkalmazott.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/Alkalmazott.cpp.s
+.PHONY : Alkalmazott.cpp.s
+
 Szemely.o: Szemely.cpp.o
 .PHONY : Szemely.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lab9"
+	@echo "... Alkalmazott.o"
+	@echo "... Alkalmazott.i"
+	@echo "... Alkalmazott.s"
 	@echo "... Szemely.o"
 	@echo "... Szemely.i"
 	@echo "... Szemely.s"
