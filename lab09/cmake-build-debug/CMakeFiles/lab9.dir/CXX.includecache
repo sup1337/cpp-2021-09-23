@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Szemely.cpp
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Alkalmazott.h
+string
+-
+ostream
+-
 Szemely.h
 /Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Szemely.h
 
@@ -15,10 +19,14 @@ string
 -
 ostream
 -
+iostream
+-
 
 /Users/sup1/CLionProjects/cpp-2021-09-23/lab09/main.cpp
 iostream
 -
 Szemely.h
 /Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Szemely.h
+Alkalmazott.h
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Alkalmazott.h
 
