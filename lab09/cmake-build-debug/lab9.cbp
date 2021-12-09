@@ -86,6 +86,12 @@
 		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Alkalmazott.h">
 			<Option target="lab9"/>
 		</Unit>
+		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Manager.cpp">
+			<Option target="lab9"/>
+		</Unit>
+		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Manager.h">
+			<Option target="lab9"/>
+		</Unit>
 		<Unit filename="/Users/sup1/CLionProjects/cpp-2021-09-23/lab09/Szemely.cpp">
 			<Option target="lab9"/>
 		</Unit>

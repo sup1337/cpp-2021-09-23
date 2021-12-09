@@ -153,6 +153,30 @@ Alkalmazott.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/Alkalmazott.cpp.s
 .PHONY : Alkalmazott.cpp.s
 
+Manager.o: Manager.cpp.o
+.PHONY : Manager.o
+
+# target to build an object file
+Manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/Manager.cpp.o
+.PHONY : Manager.cpp.o
+
+Manager.i: Manager.cpp.i
+.PHONY : Manager.i
+
+# target to preprocess a source file
+Manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/Manager.cpp.i
+.PHONY : Manager.cpp.i
+
+Manager.s: Manager.cpp.s
+.PHONY : Manager.s
+
+# target to generate assembly for a file
+Manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab9.dir/build.make CMakeFiles/lab9.dir/Manager.cpp.s
+.PHONY : Manager.cpp.s
+
 Szemely.o: Szemely.cpp.o
 .PHONY : Szemely.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... Alkalmazott.o"
 	@echo "... Alkalmazott.i"
 	@echo "... Alkalmazott.s"
+	@echo "... Manager.o"
+	@echo "... Manager.i"
+	@echo "... Manager.s"
 	@echo "... Szemely.o"
 	@echo "... Szemely.i"
 	@echo "... Szemely.s"

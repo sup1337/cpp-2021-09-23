@@ -15,8 +15,6 @@ Szemely::Szemely(const string &vezetekNev, const string &keresztNev, int szulete
 ostream &operator<<(ostream &os, const Szemely &szemely) {
     szemely.print(os);
     return os;
-
-
 }
 
 void Szemely::print(ostream &os) const {
