@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/lab10.dir/main.cpp.o CMakeFiles/lab10.dir/Student.cpp.o CMakeFiles/lab10.dir/GraduationExam.cpp.o -o lab10 
