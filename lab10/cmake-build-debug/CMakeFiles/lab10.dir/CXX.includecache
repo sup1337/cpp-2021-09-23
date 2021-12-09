@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/sup1/CLionProjects/cpp-2021-09-23/lab10/Student.cpp
-iostream
--
-Student.h
-/Users/sup1/CLionProjects/cpp-2021-09-23/lab10/Student.h
-fstream
--
-math.h
--
-
 /Users/sup1/CLionProjects/cpp-2021-09-23/lab10/Student.h
 string
 -
@@ -24,5 +14,11 @@ map
 ostream
 -
 fstream
+-
+
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab10/main.cpp
+Student.h
+/Users/sup1/CLionProjects/cpp-2021-09-23/lab10/Student.h
+iostream
 -
 

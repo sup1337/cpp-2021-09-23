@@ -47,10 +47,10 @@ void Student::addGrade(string subject, double grade) {
 }
 
 ostream &operator<<(ostream &os, const Student &student) {
-    os << "ID: " << student.ID << " firstName: " << student.firstName << " " << " lastName: " << student.lastName
+    os << "ID: " << student.ID << "\n" <<"firstName: " << student.firstName << "\n" << "lastName: " << student.lastName
        << endl;
     for (auto &index: student.grades) {
-        cout << "Student grades: " << index.first << ":" << index.second << endl;
+        cout << "Grades: " << index.first << ":" << index.second << endl;
     }
     cout << "Average: " << student.average << endl;
     return os;

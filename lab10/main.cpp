@@ -7,20 +7,12 @@ using namespace std;
 
 
 int main(){
-    try {
-        ifstream file("names.txt");
-    }catch(...){
-        cout<<"file not found" << "\n";
-    }
-Student student(1,"Kis","Pista");
+Student student(16,"Kis","Pista");
 student.addGrade("magyar",8);
 student.addGrade("matek",6);
 student.addGrade("roman",5);
 student.computeAvarage();
 cout << student;
 
-
-
-    return 0;
-
+return 0;
 }
