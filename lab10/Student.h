@@ -13,8 +13,6 @@ using namespace std;
 
 class Student {
 private:
-
-
     int ID;
     std::string firstName;
     std::string lastName;
